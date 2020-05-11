@@ -59,13 +59,13 @@ Kotlin
 ```
 class MainActivity:AppCompatActivity(), GooeyMenu2.GooeyMenuInterface {
 
-    private var gooeyMenu:GooeyMenu2?=null;    
+    private var gooeyMenu:GooeyMenu2?=null    
 
     override fun onCreate(savedInstanceState: Bundle?){
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        gooeyMenu=findViewById(R.id.gooey_menu);
-        gooeyMenu!!.setOnMenuListener(this);
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+        gooeyMenu=findViewById(R.id.gooey_menu)
+        gooeyMenu!!.setOnMenuListener(this)
     }
     
     override fun menuItemClicked(menuNumber: Int) {
