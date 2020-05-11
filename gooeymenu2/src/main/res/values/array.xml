@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="drawable_array">
+        <item>@drawable/gm2_terrain_black_24dp</item>
+        <item>@drawable/gm2_palette_black_24dp</item>
+        <item>@drawable/gm2_flag_black_24dp</item>
+        <item>@drawable/gm2_language_black_24dp</item>
+        <item>@drawable/gm2_sort_black_24dp</item>
+    </array>
+</resources>

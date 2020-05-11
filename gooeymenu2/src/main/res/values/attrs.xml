@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="GooeyMenu2">
+        <attr name="no_of_menu" format="integer" />
+        <attr name="fab_radius" format="dimension" />
+        <attr name="menu_radius" format="dimension" />
+        <attr name="gap_between_menu_fab" format="dimension" />
+        <attr name="menu_drawable" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="GooeyGroup">
+        <attr name="fab_main_icon" format="reference"/>
+        <attr name="fab_main_open" format="reference"/>
+        <attr name="fab_main_close" format="reference"/>
+        <attr name="fab_main_back_tint" format="color"/>
+        <attr name="fab_main_icon_tint" format="color"/>
+        <attr name="fab_main_text" format="string"/>
+        <attr name="fab_main_text_color" format="color"/>
+    </declare-styleable>
+
+    <!-- For reference?... Delete later ~ ... -->
+
+    <declare-styleable name="CircleMenuView">
+        <!-- Array of buttons icons. -->
+        <attr name="button_icons" format="reference"/>
+        <!-- Array of buttons colors. -->
+        <attr name="button_colors" format="reference"/>
+        <!-- Menu default icon. -->
+        <attr name="icon_menu" format="reference"/>
+        <!-- Menu closed icon. -->
+        <attr name="icon_close" format="reference"/>
+        <!-- Menu icon color. -->
+        <attr name="icon_color" format="color"/>
+        <!-- Ring effect duration. -->
+        <attr name="duration_ring" format="integer"/>
+        <!-- On long click ring effect duration. -->
+        <attr name="long_click_duration_ring" format="integer"/>
+        <!-- Menu opening animation duration. -->
+        <attr name="duration_open" format="integer"/>
+        <!-- Menu closing animation duration. -->
+        <attr name="duration_close" format="integer"/>
+        <!-- Distance between center button and buttons. -->
+        <attr name="distance" format="dimension"/>
+    </declare-styleable>
+
+</resources>

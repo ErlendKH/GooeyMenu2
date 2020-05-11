@@ -1,0 +1,3 @@
+rootProject.name='GooeyMenu2'
+include ':app'
+include ':gooeymenu2'
