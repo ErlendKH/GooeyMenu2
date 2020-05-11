@@ -10,15 +10,15 @@ To use the library:
 Step 1 - Add jitpack to the project build.gradle:
 
     buildscript {
-		    repositories {
-			      maven { url 'https://jitpack.io' }
-		    }
+	repositories {
+		maven { url 'https://jitpack.io' }
+	}
     }
 
 Step 2 - Add it as an dependency in your app build.gradle:
 
     dependencies {
-        com.github.Erlend2:gooeymenu2:1.0.0
+        implementation 'com.github.Erlend2:gooeymenu2:1.0.0'
     }
 
 More directions on how to use coming very soon!
