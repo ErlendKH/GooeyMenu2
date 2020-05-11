@@ -7,16 +7,21 @@ This is my first library, so please have patience with me.
 
 To use the library:
 
-Step 1 - Add jitpack to the project build.gradle:
-
+Step 1. Add jitpack to the project build.gradle:
+```
+allprojects {
     repositories {
-        maven { url 'https://jitpack.io' }
+        maven{url 'https://jitpack.io'}
     }
+}
+```
 
-Step 2 - Add it as an dependency in your app build.gradle:
+Step 2. Add it as an dependency in your app build.gradle:
 
-    dependencies {
-        implementation 'com.github.Erlend2:gooeymenu2:1.0.0'
-    }
+```
+dependencies {
+    implementation 'com.github.Erlend2:gooeymenu2:1.0.0'
+}
+```
 
 More directions on how to use coming very soon!
