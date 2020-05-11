@@ -3,6 +3,7 @@ package com.erlendhaartveit.gooeymenu2test
 //import com.pes.androidmaterialcolorpickerdialog.ColorPicker;
 //import com.pes.androidmaterialcolorpickerdialog.ColorPickerCallback;
 
+import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.util.Log
 import android.view.ViewTreeObserver
@@ -17,6 +18,7 @@ class MainActivity:AppCompatActivity(),GooeyMenu2.GooeyMenuInterface {
     val ma="MainActivity";
     var main_con:ConstraintLayout?=null;
     private var fab_test:FloatingActionButton?=null;
+    private var icon1:Drawable?=null;private var icon2:Drawable?=null;private var icon3:Drawable?=null;private var icon4:Drawable?=null;private var icon5:Drawable?=null;
     private var gooeyMenu:GooeyMenu2?=null;
     private var prime_dark:Int?=null;
     private var prime:Int?=null;
@@ -26,6 +28,10 @@ class MainActivity:AppCompatActivity(),GooeyMenu2.GooeyMenuInterface {
         prime_dark=ContextCompat.getColor(this,R.color.colorPrimaryDark);
         prime=ContextCompat.getColor(this,R.color.colorPrimary);
         accent=ContextCompat.getColor(this,R.color.colorAccent);
+        icon1=getDrawable(R.drawable.ic_sentiment_dissatisfied_black_24dp);
+        icon2=getDrawable(R.drawable.ic_sentiment_neutral_black_24dp);
+        icon3=getDrawable(R.drawable.ic_sentiment_satisfied_black_24dp);
+        icon4=getDrawable(R.drawable.ic_sentiment_very_satisfied_black_24dp);
 
         setContentView(R.layout.activity_main);
 
@@ -72,6 +78,8 @@ class MainActivity:AppCompatActivity(),GooeyMenu2.GooeyMenuInterface {
         Log.d(ma,"gooeyMenu!!.menuRadius: $item_size");
 
         //if(gooeyMenu!!.isMenuOpen){gooeyMenu!!.toggleMenu()}
+
+        gooeyMenu!!.setMenuIcons(icon1,icon2,icon3,icon4,null);
 
     }
 

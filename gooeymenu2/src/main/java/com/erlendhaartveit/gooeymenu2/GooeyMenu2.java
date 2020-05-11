@@ -422,6 +422,17 @@ public class GooeyMenu2 extends View {
         isMenuVisible = !isMenuVisible;*/
     }
 
+    public List<Drawable> getMenuIcons(){
+        return mDrawableArray;
+    }
+    public void setMenuIcons(Drawable icon1,Drawable icon2,Drawable icon3,Drawable icon4,Drawable icon5){
+        mDrawableArray.clear();
+        if(icon1!=null){mDrawableArray.add(icon1);}
+        if(icon2!=null){mDrawableArray.add(icon2);}
+        if(icon3!=null){mDrawableArray.add(icon3);}
+        if(icon4!=null){mDrawableArray.add(icon4);}
+        if(icon5!=null){mDrawableArray.add(icon5);}
+    }
 
     public int getCircleColor(){return mCirclePaint.getColor();}
     public void setCircleColor(int color){mCirclePaint.setColor(color);}
