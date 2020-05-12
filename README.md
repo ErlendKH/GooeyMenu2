@@ -10,7 +10,7 @@ To use the library:
 [![](https://jitpack.io/v/Erlend2/GooeyMenu2.svg)](https://jitpack.io/#Erlend2/GooeyMenu2)
 
 **Step 1.** Add jitpack to the project build.gradle:
-```
+```gradle
 allprojects {
     repositories {
         maven{url 'https://jitpack.io'}
@@ -20,7 +20,7 @@ allprojects {
 
 **Step 2.** Add it as an dependency to your app build.gradle:
 
-```
+```gradle
 dependencies {
     implementation 'com.github.Erlend2:gooeymenu2:1.0.0'
 }
@@ -28,7 +28,7 @@ dependencies {
 
 **Step 3.** Add the GooeyMenu2 view to a xml layout:
 
-```
+```xml
     <com.package.name.GooeyMenu2
         android:id="@+id/gooey_menu"
         android:layout_width="wrap_content" android:layout_height="wrap_content"
@@ -56,7 +56,7 @@ As of now there are five particular properties of the GooeyMenu2 view:
 
 Kotlin
 
-```
+```kotlin
 class MainActivity:AppCompatActivity(), GooeyMenu2.GooeyMenuInterface {
 
     private var gooeyMenu:GooeyMenu2?=null    
