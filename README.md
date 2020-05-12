@@ -62,7 +62,7 @@ As of now there are five particular properties of the GooeyMenu2 view:
 
 </br>
 
-**Step 4.** Add the interface to an activity (sorry, I use kotlin for the testing):
+**Step 4.** Add the interface and GooeyMenu2 view to an activity (sorry, I use kotlin for the testing):
 
 Kotlin
 
