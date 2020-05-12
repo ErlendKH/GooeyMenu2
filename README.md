@@ -85,21 +85,22 @@ class MainActivity:AppCompatActivity(), GooeyMenu2.GooeyMenuInterface {
 
 Here are some of the programmatical options currently in place, and more are likely to be added as they get created:
 
-* **isMenuOpen** (boolean): Returns a boolean for whether the menu is open or closed.
-* **borderColor** (int): get/set the border color of the menu button.
-* **circleColor** (int): get/set the circle color of the menu button and items.
-* **animationDuration** (long): get/set the animation duration of opening/hiding the menu.
-* **menuToItemDistance** (int): get/set the distance between the menu button and the menu items. It converts a "dp" value to "int".
-* **menuRadius** (int): get/set the radius/size of the main button. It converts a "dp" value to "int".
-* **itemRadius** (int): get/set the radius/size of the menu items. It converts a "dp" value to "int".
-* **getMenuIcons** (List<Drawable>): Gets a list of drawables for the menu items.
-* **setMenuIcons** (Drawable, Drawable, Drawable, Drawable, Drawable): Sets new icons to the menu items programmatically. If less than five, just replace a drawable with "null".
+* **isMenuOpen (boolean)**: Returns a boolean for whether the menu is open or closed.
+* **borderColor (int)**: get/set the border color of the menu button.
+* **circleColor (int)**: get/set the circle color of the menu button and items.
+* **animationDuration (long)**: get/set the animation duration of opening/hiding the menu.
+* **menuToItemDistance (int)**: get/set the distance between the menu button and the menu items. It converts a "dp" value to "int".
+* **menuRadius (int)**: get/set the radius/size of the main button. It converts a "dp" value to "int".
+* **itemRadius (int)**: get/set the radius/size of the menu items. It converts a "dp" value to "int".
+* **getMenuIcons (List<Drawable>)**: Gets a list of drawables for the menu items.
+* **setMenuIcons (Drawable, Drawable, Drawable, Drawable, Drawable)**: Sets new icons to the menu items programmatically. If less than five, just replace a drawable with "null".
 
 This is still very much a work in progress, and I would very much appreciate help through pull requests. Here are some of the new functions I'd like to add:
 
 * Set distance between menu items.
+* Change/set menu item positions.
+* Change/set nr of menu items dynamically.
 * Create a GooeyMenu2 fully programmatically.
 * Show an effect when pressing menu items.
 * Add option to start the menu closed/open.
 * Set colors for all menu items (multi-color support).
-
