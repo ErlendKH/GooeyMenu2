@@ -24,7 +24,7 @@ allprojects {
 
 </br>
 
-**Step 2.** Add it as an dependency to your app build.gradle:
+**Step 2.** Add the library as a dependency to your app build.gradle:
 
 ```gradle
 dependencies {
