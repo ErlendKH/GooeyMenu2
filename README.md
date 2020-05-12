@@ -5,9 +5,13 @@ As of 11th May 2020, he hasn't made any changes to it since Dec 26, 2016 (link: 
 I thought his menu has even more potential, and therefore I wanted to continue his work here.
 This is my first library, so please have patience with me.
 
-To use the library:
+</br>
+
+<h2>How to use the library</h2>
 
 [![](https://jitpack.io/v/Erlend2/GooeyMenu2.svg)](https://jitpack.io/#Erlend2/GooeyMenu2)
+
+</br>
 
 **Step 1.** Add jitpack to the project build.gradle:
 ```gradle
@@ -18,6 +22,8 @@ allprojects {
 }
 ```
 
+</br>
+
 **Step 2.** Add it as an dependency to your app build.gradle:
 
 ```gradle
@@ -25,6 +31,8 @@ dependencies {
     implementation 'com.github.Erlend2:gooeymenu2:1.0.0'
 }
 ```
+
+</br>
 
 **Step 3.** Add the GooeyMenu2 view to a xml layout:
 
@@ -51,6 +59,8 @@ As of now there are five particular properties of the GooeyMenu2 view:
 * **menu_radius**: Radius or size of the menu item buttons.
 * **gap_between_menu_fab**: Distance between main button and the menu items.
 * **menu_drawable**: A list of drawables. Can be set in xml by adding drawables to an array called "drawable_array" in array.xml.
+
+</br>
 
 **Step 4.** Add the interface to an activity (sorry, I use kotlin for the testing):
 
@@ -83,6 +93,10 @@ class MainActivity:AppCompatActivity(), GooeyMenu2.GooeyMenuInterface {
 }
 ```
 
+</br>
+
+<h2>Current methods</h2>
+
 Here are some of the programmatical options currently in place, and more are likely to be added as they get created:
 
 * **isMenuOpen (boolean)**: Returns a boolean for whether the menu is open or closed.
@@ -94,6 +108,10 @@ Here are some of the programmatical options currently in place, and more are lik
 * **itemRadius (int)**: get/set the radius/size of the menu items. It converts a "dp" value to "int".
 * **getMenuIcons (List<Drawable>)**: Gets a list of drawables for the menu items.
 * **setMenuIcons (Drawable, Drawable, Drawable, Drawable, Drawable)**: Sets new icons to the menu items programmatically. If less than five, just replace a drawable with "null".
+
+</br>
+
+<h2>Updates under development</h2>
 
 This is still very much a work in progress, and I would very much appreciate help through pull requests. Here are some of the new functions I'd like to add:
 
