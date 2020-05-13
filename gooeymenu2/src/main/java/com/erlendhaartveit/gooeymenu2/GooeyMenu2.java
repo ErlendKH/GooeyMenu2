@@ -404,23 +404,25 @@ public class GooeyMenu2 extends View {
 
     public boolean isMenuOpen(){return isMenuVisible;}
     //public void toggleMenu(boolean open,boolean animate){
-    public void toggleMenu(){
+    
+/*    public void toggleMenu(){
 
-/*        mBezierAnimation.start();// hm, I think this is the wobble effect?
-        cancelAllAnimation();
-        if (isMenuVisible){
-            startHideAnimate();
-            if(mGooeyMenuInterface!=null) {
-                mGooeyMenuInterface.menuClose();
-            }
-        }else{
-            startShowAnimate();
-            if(mGooeyMenuInterface!=null) {
-                mGooeyMenuInterface.menuOpen();
-            }
-        }
-        isMenuVisible = !isMenuVisible;*/
-    }
+//        mBezierAnimation.start();// hm, I think this is the wobble effect?
+//        cancelAllAnimation();
+//        if (isMenuVisible){
+//            startHideAnimate();
+//            if(mGooeyMenuInterface!=null) {
+//                mGooeyMenuInterface.menuClose();
+//            }
+//        }else{
+//            startShowAnimate();
+//            if(mGooeyMenuInterface!=null) {
+//                mGooeyMenuInterface.menuOpen();
+//            }
+//        }
+//        isMenuVisible = !isMenuVisible;
+
+    }*/
 
     public List<Drawable> getMenuIcons(){
         return mDrawableArray;

@@ -6,6 +6,7 @@ package com.erlendhaartveit.gooeymenu2test
 import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import android.view.ViewTreeObserver
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
@@ -40,11 +41,15 @@ class MainActivity:AppCompatActivity(),GooeyMenu2.GooeyMenuInterface {
         gooeyMenu=findViewById(R.id.gooey_menu);
         gooeyMenu!!.setOnMenuListener(this);
 
+        // Hide fab button atm:
+        fab_test!!.visibility=View.INVISIBLE;
+
         // works!
         var open=gooeyMenu!!.isMenuOpen;
         Log.d(ma,"gooeyMenu!!.isMenuOpen: $open");// true
         // it worked!
-        gooeyMenu!!.borderColor=prime_dark!!;
+        //gooeyMenu!!.borderColor=prime_dark!!;
+        gooeyMenu!!.borderColor=accent!!;
         gooeyMenu!!.circleColor=accent!!;
         Log.d(ma,"gooeyMenu!!.borderColor: "+gooeyMenu!!.borderColor);// -13172557
         Log.d(ma,"gooeyMenu!!.circleColor: "+gooeyMenu!!.circleColor);// -16524603
@@ -79,7 +84,7 @@ class MainActivity:AppCompatActivity(),GooeyMenu2.GooeyMenuInterface {
 
         //if(gooeyMenu!!.isMenuOpen){gooeyMenu!!.toggleMenu()}
 
-        gooeyMenu!!.setMenuIcons(icon1,icon2,icon3,icon4,null);
+        //gooeyMenu!!.setMenuIcons(icon1,icon2,icon3,icon4,null);
 
     }
 

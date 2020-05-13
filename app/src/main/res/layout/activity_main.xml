@@ -10,13 +10,14 @@
         android:id="@+id/gooey_menu"
         android:layout_width="wrap_content" android:layout_height="wrap_content"
         app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="64dp"
-        app:no_of_menu="4"
+        app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+        app:no_of_menu="5"
         app:fab_radius="@dimen/big_circle_radius"
         app:menu_radius="@dimen/small_circle_radius"
         app:gap_between_menu_fab="@dimen/min_gap"
         app:menu_drawable="@array/drawable_array" />
+
+    <!--android:layout_marginBottom="64dp"-->
 
 <!--    <TextView
         android:layout_width="wrap_content"
